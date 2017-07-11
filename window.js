@@ -1,9 +1,9 @@
 var win;
 
-if (typeof window !== "undefined") {
-    win = window;
-} else if (typeof global !== "undefined") {
+if (typeof global !== "undefined") {
     win = global;
+} else if (typeof window !== "undefined") {
+    win = window;
 } else if (typeof self !== "undefined"){
     win = self;
 } else {
